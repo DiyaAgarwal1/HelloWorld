@@ -12,7 +12,7 @@ function AppPro(): JSX.Element{
     
     return(
         <View style={styles.container}>
-            <Text style={isDarkMode ? styles.whiteText : styles.whiteText}>
+            <Text style={isDarkMode ? styles.whiteText : styles.darkText}>
                 Hello World !
             </Text>
         </View>
@@ -26,11 +26,17 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     whiteText: {
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        fontSize: 50,
+        backgroundColor: '#000000',
+        margin: 40,
+        padding: 30,
+        borderRadius: 25,
     },
     darkText: {
-        color: '#000000'
+        color: '#000000',
+        fontSize: 50,
     }
 })
 
-export default AppPro
+export default AppPro;
